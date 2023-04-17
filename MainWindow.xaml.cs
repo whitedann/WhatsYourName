@@ -41,10 +41,10 @@ namespace WhatsYourName
             SecondPerson.Text = "";
 
             /** Third person goes here **/
-            ThirdPerson.Text = "";
+            ThirdPerson.Text = "Im trying to break things";
 
             /** Fourth person goes here **/
-            FourthPerson.Text = "Grayson is the fourth person";
+            FourthPerson.Text = "";
 
 
             if(FirstPerson.Text == "" && SecondPerson.Text == "" && ThirdPerson.Text == "" && FourthPerson.Text == "")
