@@ -35,7 +35,7 @@ namespace WhatsYourName
         {
 
             /** First person goes here **/
-            FirstPerson.Text = "";
+            FirstPerson.Text = "Daniel";
 
             /** Second person goes here **/
             SecondPerson.Text = "";
