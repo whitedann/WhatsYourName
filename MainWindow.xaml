@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1">
             <TextBlock x:Name="NameBox" FontSize="48" TextAlignment="Center" Text="What is your name?" Foreground="AliceBlue"/>
-            <Button Click="OnButtonClick" Content="Click!" HorizontalAlignment="Center" Margin="0 25 0 0" Height="auto" Padding="10" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button Click="OnButtonClick" Content="Click Me!" HorizontalAlignment="Center" Margin="0 25 0 0" Height="auto" Padding="10" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         </StackPanel>
     </Grid>
 </Window>
