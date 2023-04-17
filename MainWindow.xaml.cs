@@ -41,7 +41,7 @@ namespace WhatsYourName
             SecondPerson.Text = "";
 
             /** Third person goes here **/
-            ThirdPerson.Text = "";
+            ThirdPerson.Text = "Mohammed";
 
             /** Fourth person goes here **/
             FourthPerson.Text = "";
