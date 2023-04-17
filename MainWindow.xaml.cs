@@ -44,7 +44,7 @@ namespace WhatsYourName
             ThirdPerson.Text = "";
 
             /** Fourth person goes here **/
-            FourthPerson.Text = "";
+            FourthPerson.Text = "Grayson is the fourth person";
 
 
             if(FirstPerson.Text == "" && SecondPerson.Text == "" && ThirdPerson.Text == "" && FourthPerson.Text == "")
