@@ -5,19 +5,216 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WhatsYourName"
         mc:Ignorable="d"
-        Title="Main Window" Height="450" Width="800">
-    <Grid Background="DodgerBlue">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
+        Title="Main Window" Height="800" Width="800">
+    <Window.Resources>
+        <Storyboard x:Key="slideInLeft0">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Storyboard.TargetName="SwitchScale0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleY)" Storyboard.TargetName="SwitchScale0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="slideOutLeft0">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Storyboard.TargetName="SwitchScale0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleY)" Storyboard.TargetName="SwitchScale0">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="slideInRight1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Storyboard.TargetName="SwitchScale1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleY)" Storyboard.TargetName="SwitchScale1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="slideOutRight1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Storyboard.TargetName="SwitchScale1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleY)" Storyboard.TargetName="SwitchScale1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="slideInLeft2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Storyboard.TargetName="SwitchScale2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleY)" Storyboard.TargetName="SwitchScale2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="slideOutLeft2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Storyboard.TargetName="SwitchScale2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleY)" Storyboard.TargetName="SwitchScale2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="slideInRight3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Storyboard.TargetName="SwitchScale3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleY)" Storyboard.TargetName="SwitchScale3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="slideOutRight3">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleX)" Storyboard.TargetName="SwitchScale3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(ScaleTransform.ScaleY)" Storyboard.TargetName="SwitchScale3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Grid Background="DodgerBlue" >
         <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
-        <StackPanel Grid.Row="1">
-            <TextBlock x:Name="NameBox" FontSize="48" TextAlignment="Center" Text="What is your name?" Foreground="AliceBlue"/>
-            <Button Click="OnButtonClick" Content="Click Me!" HorizontalAlignment="Center" Margin="0 25 0 0" Height="auto" Padding="10" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        </StackPanel>
+        <Grid Grid.Row="5">
+            <Button Grid.Row="5" Content="Click me" Width="200" Height="40" Background="Gainsboro" Click="OnButtonClick"/>
+        </Grid>
+        <Grid Grid.Row="0" VerticalAlignment="Center">
+            <TextBlock FontSize="48" TextAlignment="Center" Text="Who is here?" Foreground="AliceBlue">
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock FontSize="36" x:Name="FirstPerson" TextAlignment="Center" Text="" Foreground="AliceBlue">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <ScaleTransform x:Name="SwitchScale0"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="2" VerticalAlignment="Center">
+            <TextBlock FontSize="36" x:Name="SecondPerson" TextAlignment="Center" Text="" Foreground="AliceBlue">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <ScaleTransform x:Name="SwitchScale1"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="3" VerticalAlignment="Center">
+            <TextBlock FontSize="36" x:Name="ThirdPerson" TextAlignment="Center" Text="" Foreground="AliceBlue">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <ScaleTransform x:Name="SwitchScale2"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="4" VerticalAlignment="Center">
+            <TextBlock FontSize="36" x:Name="FourthPerson" TextAlignment="Center" Text="" Foreground="AliceBlue">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <ScaleTransform x:Name="SwitchScale3"/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Grid>
     </Grid>
 </Window>
