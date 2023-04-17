@@ -34,9 +34,16 @@ namespace WhatsYourName
         private void OnButtonClick(object sender, RoutedEventArgs e)
         {
 
-            FirstPerson.Text = "";
+            /** First person goes here **/
+            FirstPerson.Text = "Daniel is here!";
+
+            /** Second person goes here **/
             SecondPerson.Text = "";
+
+            /** Third person goes here **/
             ThirdPerson.Text = "";
+
+            /** Fourth person goes here **/
             FourthPerson.Text = "";
 
 
